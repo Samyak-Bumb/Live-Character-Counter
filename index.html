@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Created/Designed By Samyak Bumb -->
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Live Character Counter By Samyak</title>
+		<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section>
+	<div class="main">
+		<h3>Live Character Counter</h3>
+		<textarea placeholder="Write Your Text Here..." onkeyup="countLetters();"></textarea>
+		<p>Total Characters : <span class="count">0</span></p>
+	</div>
+</section>
+	<script src='script.js'></script>
+	<script src='vanilla-tilt.js'></script>
+	<script>
+		VanillaTilt.init(document.querySelector(".main"),{
+			max: 15,
+			speed: 400,
+			glare: true,
+			"max-glare": 0.2,
+		});
+	</script>
+</body>
+</html>
